@@ -1,0 +1,25 @@
+.home{
+    height: auto;
+    width: calc(100vw - 17px);
+    margin: 0;
+}
+.top-greeter{
+    background-image:url("/public/greeter-background.jpg");
+    width:  calc(100vw - 17px);;
+    height: 530px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+@media (max-width: 649px ) {
+    .top-greeter{
+        height: auto;
+    }
+}
+
+@media (max-width: 1024px ) {
+    .top-greeter{
+        background: #539cd7;
+    }
+}

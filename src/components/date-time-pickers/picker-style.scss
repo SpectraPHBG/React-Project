@@ -1,0 +1,11 @@
+.picker{
+    width: 97%;
+    margin: 0;
+    height: 50px;
+}
+
+@media (min-width: 650px ) {
+    .picker{
+        width: 100px;
+    }
+}

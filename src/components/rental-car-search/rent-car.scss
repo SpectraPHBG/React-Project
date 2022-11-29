@@ -1,0 +1,38 @@
+
+.search-form{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    overflow: hidden;
+    border-radius: 1em;
+    background: #f3ad00;
+}
+
+.search-button{
+    background: #1d643b;
+    width: 97%;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+}
+
+.search-button:hover{
+    background: #175030;
+    color: white;
+}
+
+
+
+@media (min-width: 650px ) {
+    .search-form{
+        flex-direction: row;
+
+        width: 650px;
+    }
+    .search-button{
+        width: 100px;
+        height: 50px;
+    }
+}

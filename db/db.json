@@ -1,0 +1,428 @@
+{
+  "VehicleTypes": [
+    {
+      "id": 1,
+      "type": "economy"
+    },
+    {
+      "id": 2,
+      "type": "estate"
+    },
+    {
+      "id": 3,
+      "type": "luxury"
+    },
+    {
+      "id": 4,
+      "type": "SUV"
+    },
+    {
+      "id": 5,
+      "type": "cargo"
+    }
+  ],
+  "FuelTypes": [
+    {
+      "id": 1,
+      "type": "petrol"
+    },
+    {
+      "id": 2,
+      "type": "diesel"
+    },
+    {
+      "id": 3,
+      "type": "hybrid"
+    },
+    {
+      "id": 4,
+      "type": "electric"
+    }
+  ],
+  "VehicleBrands": [
+    {
+      "id": 1,
+      "name": "VolksWagen"
+    },
+    {
+      "id": 2,
+      "name": "BMW"
+    },
+    {
+      "id": 3,
+      "name": "Citroen"
+    },
+    {
+      "id": 4,
+      "name": "Audi"
+    },
+    {
+      "id": 5,
+      "name": "Mitsubishi"
+    },
+    {
+      "id": 6,
+      "name": "Mercedes"
+    }
+  ],
+  "VehicleModels": [
+    {
+      "id": 1,
+      "brandId": 1,
+      "name": "Golf 4",
+      "photoLink": "/vehicle-images/vw-golf4-1.6.jpg"
+    },
+    {
+      "id": 2,
+      "brandId": 1,
+      "name": "Passat",
+      "photoLink": "/vehicle-images/vw-passat-2014.jpg"
+    },
+    {
+      "id": 3,
+      "brandId": 1,
+      "name": "Touran",
+      "photoLink": "/vehicle-images/vw-touran-2006.jpg"
+    },
+    {
+      "id": 4,
+      "brandId": 1,
+      "name": "Tiguan",
+      "photoLink": "/vehicle-images/vw-tiguan-2018.jpg"
+    },
+    {
+      "id": 5,
+      "brandId": 2,
+      "name": "8 Series",
+      "photoLink": "/vehicle-images/bmw-series8.jpg"
+    },
+    {
+      "id": 6,
+      "brandId": 2,
+      "name": "X6",
+      "photoLink": "/vehicle-images/bmw-x6.jpg"
+    },
+    {
+      "id": 7,
+      "brandId": 2,
+      "name": "F10",
+      "photoLink": "/vehicle-images/bmw-f10.jpg"
+    },
+    {
+      "id": 8,
+      "brandId": 2,
+      "name": "E60",
+      "photoLink": "/vehicle-images/bmw-e60.jpg"
+    },
+    {
+      "id": 9,
+      "brandId": 3,
+      "name": "C3",
+      "photoLink": "/vehicle-images/citroen-c3.jpg"
+    },
+    {
+      "id": 10,
+      "brandId": 3,
+      "name": "C4 Grand Picasso",
+      "photoLink": "/vehicle-images/citroen-c4-grand-picasso.jpg"
+    },
+    {
+      "id": 11,
+      "brandId": 3,
+      "name": "C Elysse",
+      "photoLink": "/vehicle-images/citroen-elysse.jpg"
+    },
+    {
+      "id": 12,
+      "brandId": 4,
+      "name": "A6",
+      "photoLink": "/vehicle-images/audi-a6.jpg"
+    },
+    {
+      "id": 13,
+      "brandId": 4,
+      "name": "Q7",
+      "photoLink": "/vehicle-images/audi-q7.jpg"
+    },
+    {
+      "id": 14,
+      "brandId": 4,
+      "name": "C Elysse",
+      "photoLink": "/vehicle-images/audi-rs3.jpg"
+    },
+    {
+      "id": 15,
+      "brandId": 5,
+      "name": "Mirage G4",
+      "photoLink": "/vehicle-images/mitsubishi-mirage-g4.jpg"
+    },
+    {
+      "id": 16,
+      "brandId": 5,
+      "name": "Outlander",
+      "photoLink": "/vehicle-images/mitsubishi-outlander.jpg"
+    },
+    {
+      "id": 17,
+      "brandId": 5,
+      "name": "Triton",
+      "photoLink": "/vehicle-images/mitsubishi-triton.jpg"
+    },
+    {
+      "id": 18,
+      "brandId": 6,
+      "name": "C Class",
+      "photoLink": "/vehicle-images/mercedes-c-class.jpg"
+    },
+    {
+      "id": 19,
+      "brandId": 6,
+      "name": "CLA",
+      "photoLink": "/vehicle-images/mercedes-cla.jpg"
+    },
+    {
+      "id": 20,
+      "brandId": 6,
+      "name": "GLA",
+      "photoLink": "/vehicle-images/mercedes-gls.jpg"
+    }
+  ],
+  "Vehicles": [
+    {
+      "id": 1,
+      "modelId": 1,
+      "brandId": 1,
+      "constructionYear": 1998,
+      "fuelTypeId": 1,
+      "vehicleTypeId": 1,
+      "seats": 3,
+      "dailyPrice": 350,
+      "count": 12
+    },
+    {
+      "id": 3,
+      "modelId": 2,
+      "brandId": 1,
+      "constructionYear": 2014,
+      "fuelTypeId": 2,
+      "vehicleTypeId": 2,
+      "seats": 4,
+      "dailyPrice": 478,
+      "count": 5
+    },
+    {
+      "id": 4,
+      "modelId": 3,
+      "brandId": 1,
+      "constructionYear": 2006,
+      "fuelTypeId": 1,
+      "vehicleTypeId": 1,
+      "seats": 5,
+      "dailyPrice": 500,
+      "count": 6
+    },
+    {
+      "id": 5,
+      "modelId": 4,
+      "brandId": 1,
+      "constructionYear": 2018,
+      "fuelTypeId": 4,
+      "vehicleTypeId": 4,
+      "seats": 3,
+      "dailyPrice": 826,
+      "count": 9
+    },
+    {
+      "id": 6,
+      "modelId": 6,
+      "brandId": 2,
+      "constructionYear": 2022,
+      "fuelTypeId": 3,
+      "vehicleTypeId": 2,
+      "seats": 3,
+      "dailyPrice": 350,
+      "count": 5
+    },
+    {
+      "id": 7,
+      "modelId": 7,
+      "brandId": 2,
+      "constructionYear": 2004,
+      "fuelTypeId": 1,
+      "vehicleTypeId": 2,
+      "seats": 3,
+      "dailyPrice": 350,
+      "count": 2
+    },
+    {
+      "id": 8,
+      "modelId": 8,
+      "brandId": 2,
+      "constructionYear": 2018,
+      "fuelTypeId": 1,
+      "vehicleTypeId": 1,
+      "seats": 3,
+      "dailyPrice": 350,
+      "count": 2
+    },
+    {
+      "id": 2,
+      "modelId": 5,
+      "brandId": 2,
+      "constructionYear": 2017,
+      "fuelTypeId": 2,
+      "vehicleTypeId": 3,
+      "seats": 5,
+      "dailyPrice": 750,
+      "count": 3
+    },
+    {
+      "id": 9,
+      "modelId": 1,
+      "brandId": 1,
+      "constructionYear": 1998,
+      "fuelTypeId": 3,
+      "vehicleTypeId": 1,
+      "seats": 4,
+      "dailyPrice": 378,
+      "count": 4
+    },
+    {
+      "id": 10,
+      "modelId": 16,
+      "brandId": 5,
+      "constructionYear": 2019,
+      "fuelTypeId": 1,
+      "vehicleTypeId": 1,
+      "seats": 5,
+      "dailyPrice": 700,
+      "count": 3
+    }
+  ],
+  "Users": [
+    {
+      "id": 1,
+      "name": "Todor Ivanov Ivanov",
+      "email": "tosho@abv.bg",
+      "phone": "0888131274",
+      "password": "password",
+      "isAdmin": true,
+      "isVIP": false
+    },
+    {
+      "name": "Ivan Ivanov Ivanov",
+      "email": "vankata@abv.bg",
+      "phone": "0888123745",
+      "password": "123",
+      "id": 2,
+      "isAdmin": false,
+      "isVIP": false
+    }
+  ],
+  "RentalEvents": [
+    {
+      "holderName": "awda awd",
+      "customerId": 1,
+      "customerName": "Todor Ivanov Ivanov",
+      "number": "1111 1111 1111 1111",
+      "expiration": "12/2121",
+      "cvv": "111",
+      "rentedVehicleId": "1",
+      "rentFrom": "2022-11-22T12:46:11.424Z",
+      "rentTo": "2022-12-02T13:46:11.000Z",
+      "discountPercentage": 7,
+      "totalSum": 3255,
+      "status": "Ongoing",
+      "id": 1,
+      "createdAt": "2022-11-21T12:58:32.548Z",
+      "updatedAt": "2022-11-21T12:58:32.548Z",
+      "rentedVehicle": "VolksWagen Golf 4 1.6"
+    },
+    {
+      "holderName": "awda awd",
+      "customerId": 1,
+      "customerName": "Todor Ivanov Ivanov",
+      "number": "1111 1111 1111 1111",
+      "expiration": "12/2121",
+      "cvv": "111",
+      "rentedVehicleId": "1",
+      "rentFrom": "2022-11-22T12:46:11.424Z",
+      "rentTo": "2022-11-23T13:46:11.000Z",
+      "discountPercentage": 7,
+      "totalSum": 3255,
+      "status": "Completed",
+      "id": 2,
+      "createdAt": "2022-11-21T12:58:32.548Z",
+      "updatedAt": "2022-11-21T12:58:32.548Z",
+      "rentedVehicle": "VolksWagen Golf 4 1.6"
+    },
+    {
+      "holderName": "awda awd",
+      "customerId": 1,
+      "number": "1111 1111 1111 1111",
+      "expiration": "12/2023",
+      "cvv": "111",
+      "rentedVehicleId": "2",
+      "rentFrom": "2022-11-29T15:05:57.384Z",
+      "rentTo": "2022-12-09T16:05:57.000Z",
+      "discountPercentage": 7,
+      "totalSum": "6975.00",
+      "status": "Completed",
+      "id": 3,
+      "createdAt": "2022-11-28T15:39:11.286Z",
+      "updatedAt": "2022-11-28T15:39:11.286Z",
+      "rentedVehicle": "BMW 8 Series"
+    },
+    {
+      "holderName": "wad awd",
+      "customerId": 1,
+      "number": "1111 1111 1111 1111",
+      "expiration": "12/2112",
+      "cvv": "111",
+      "rentedVehicleId": "4",
+      "rentFrom": "2022-11-29T15:39:16.337Z",
+      "rentTo": "2022-11-30T16:39:16.337Z",
+      "discountPercentage": 0,
+      "totalSum": "500.00",
+      "status": "Completed",
+      "id": 4,
+      "createdAt": "2022-11-28T15:40:01.236Z",
+      "updatedAt": "2022-11-28T15:40:01.236Z",
+      "rentedVehicle": "VolksWagen Touran"
+    },
+    {
+      "holderName": "awda awd",
+      "customerId": 2,
+      "number": "1234 9481 4561 2339",
+      "expiration": "12/2121",
+      "cvv": "111",
+      "rentedVehicleId": "3",
+      "rentFrom": "2022-11-29T16:42:04.615Z",
+      "rentTo": "2022-12-30T17:42:04.000Z",
+      "discountPercentage": 10,
+      "totalSum": "13336.20",
+      "status": "Ongoing",
+      "id": 5,
+      "createdAt": "2022-11-28T16:43:11.246Z",
+      "updatedAt": "2022-11-28T16:43:11.246Z",
+      "rentedVehicle": "VolksWagen Passat"
+    },
+    {
+      "holderName": "wad awd",
+      "customerId": 2,
+      "number": "1234 9481 4561 2339",
+      "expiration": "04/2025",
+      "cvv": "111",
+      "rentedVehicleId": "3",
+      "rentFrom": "2022-12-03T16:44:31.000Z",
+      "rentTo": "2023-01-27T17:44:31.000Z",
+      "discountPercentage": 10,
+      "totalSum": "23661.00",
+      "status": "Ongoing",
+      "id": 6,
+      "createdAt": "2022-11-28T16:44:54.570Z",
+      "updatedAt": "2022-11-28T16:44:54.570Z",
+      "rentedVehicle": "VolksWagen Passat"
+    }
+  ]
+}

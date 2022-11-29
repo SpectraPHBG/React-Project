@@ -1,0 +1,32 @@
+.search-wrapper{
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: auto;
+  border-radius: 1em;
+  background: #ffffff;
+  border: 4px solid #f3ad00;
+}
+
+.edit-button{
+  background: #1d643b;
+  width: 100%;
+  height: 50px;
+  color: white;
+  font-weight: bold;
+}
+
+@media (min-width: 650px ) {
+  .search-wrapper{
+    flex-direction: row;
+    width: 650px;
+    height: 70px;
+  }
+  .edit-button{
+    width: 70px;
+    height: 45px;
+  }
+}
