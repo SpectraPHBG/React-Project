@@ -260,7 +260,7 @@
       "brandId": 2,
       "constructionYear": 2018,
       "fuelTypeId": 1,
-      "vehicleTypeId": 1,
+      "vehicleTypeId": 3,
       "seats": 3,
       "dailyPrice": 350,
       "count": 2
@@ -307,7 +307,7 @@
       "phone": "0888131274",
       "password": "password",
       "isAdmin": true,
-      "isVIP": false
+      "isVIP": true
     },
     {
       "name": "Ivan Ivanov Ivanov",

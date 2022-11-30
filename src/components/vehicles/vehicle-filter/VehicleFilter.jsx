@@ -4,6 +4,7 @@ import {getAllVehicleTypes} from "../../../utils/services/vehicle-type-http-util
 import {getAllFuelTypes} from "../../../utils/services/fuel-type-http-utils";
 import {getAllVehicleBrands} from "../../../utils/services/vehicle-brand-http-utils";
 import {getAllVehicles} from "../../../utils/services/vehicle-http-utils";
+import {useNavigate} from "react-router";
 
 export function VehicleFilter({setVehicles}) {
     const minCollapseDisplay = 3;
@@ -21,6 +22,8 @@ export function VehicleFilter({setVehicles}) {
     const [seatsFilter, setSeatsFilter] = useState(0);
     const [minPriceFilter, setMinPriceFilter] = useState(0);
     const [maxPriceFilter, setMaxPriceFilter] = useState(0);
+
+    const navigate = useNavigate();
 
     useEffect(() => {
         getAllVehicleTypes()
@@ -118,16 +121,6 @@ export function VehicleFilter({setVehicles}) {
         }
     }
 
-    const onFormReset = (event) => {
-        event.preventDefault();
-        setTypeFilter([]);
-        setFuelFilter([]);
-        setBrandFilter([]);
-        setSeatsFilter(0);
-        setMinPriceFilter(0);
-        setMaxPriceFilter(0);
-    }
-
     const onFormSubmit = (event) => {
         event.preventDefault();
         getAllVehicles().then((response) =>{
@@ -152,6 +145,7 @@ export function VehicleFilter({setVehicles}) {
                 vehicles = vehicles.filter(v => v.dailyPrice <= maxPriceFilter);
             }
             setVehicles(vehicles.filter(v => v.count>0));
+            navigate('/browse');
         });
     }
 
@@ -222,7 +216,7 @@ export function VehicleFilter({setVehicles}) {
 
     return (
         <div>
-            <Form className="ms-md-4 mb-5 py-4 card h-100 shadow-2-strong" onReset={onFormReset} onSubmit={onFormSubmit}>
+            <Form className="ms-md-4 mb-5 py-4 card h-100 shadow-2-strong" onSubmit={onFormSubmit}>
                 <div>
                     <Form.Group className="mx-5 w-75 text-start" controlId="vehicleType" onChange={onTypeCheckBoxChange}>
                         <Form.Label>Type:</Form.Label>
@@ -270,9 +264,6 @@ export function VehicleFilter({setVehicles}) {
                     </Form.Group>
                     <Button variant="success" type="submit" className='mx-2'>
                         Search
-                    </Button>
-                    <Button variant="danger" type="reset" className="mx-2">
-                        Clear
                     </Button>
                 </div>
             </Form>

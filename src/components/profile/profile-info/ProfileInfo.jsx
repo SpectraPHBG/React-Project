@@ -47,6 +47,7 @@ export function ProfileInfo({user}){
             return <MDBCardText>Standard User</MDBCardText>;
         }
     };
+    console.log(user);
 
     return (
         <>
