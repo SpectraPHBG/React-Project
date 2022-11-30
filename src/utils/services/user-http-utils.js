@@ -1,5 +1,4 @@
 import axios from 'axios';
-import React from "react";
 import {deleteRental, getCustomerRentals} from "./rental-http-utils";
 
 const apiUrl = 'http://localhost:3005/Users';
