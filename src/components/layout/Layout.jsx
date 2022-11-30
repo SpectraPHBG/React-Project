@@ -9,7 +9,7 @@ function Layout() {
     return(
         <div>
             <Header></Header>
-            <Main> </Main>
+            <Main></Main>
             <Footer></Footer>
         </div>
     );
