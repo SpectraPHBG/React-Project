@@ -9,7 +9,7 @@ function Layout() {
     return(
         <div>
             <Header></Header>
-            <Main message ={message}></Main>
+            <Main></Main>
             <Footer></Footer>
         </div>
     );
